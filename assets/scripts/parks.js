@@ -1,7 +1,5 @@
 // this depends on load_national_parks_data.js
 
-const optionAll = '<option>All</option>'
-
 function populateParkInfo(selectedParks) {
     parkInfo.innerHTML = '<p><hr/></p>'
     selectedParks.forEach((park) => {
