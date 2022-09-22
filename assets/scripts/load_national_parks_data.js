@@ -7,6 +7,8 @@ let searchBy = document.querySelector("#searchBy")
 let searchType = "state"
 let parkSelection = document.querySelector("#parkSelection")
 let selectedParks = ""
+let whichOption = document.querySelector("#whichOption")
+let selectedOption = document.querySelector("#selectedOption")
 
 window.onload = function(){
 
@@ -45,6 +47,10 @@ window.onload = function(){
         }
         populateParkInfo(selectedParks)
         parkInfo.classList.remove("d-none")
+   })
+
+   whichOption.addEventListener("click", () => {
+      selectedOption.innerHTML = parkSelection.selectedOptions[0].value
    })
 }
 

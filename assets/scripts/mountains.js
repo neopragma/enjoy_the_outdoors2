@@ -14,10 +14,6 @@ function loadCardFor(mountain) {
     infoTable.classList.remove("d-none")
 }
 
-function capitalize(value) {
-    return `${value.charAt(0).toUpperCase()}${value.slice(1)}`
-}
-
 function formatItem(obj, key) {
     var result = ""
     switch(key) {
